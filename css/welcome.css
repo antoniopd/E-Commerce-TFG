@@ -1,0 +1,54 @@
+/* Importando la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(/img/forrest.png) no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 25%;
+}
+.content h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #f9f3f4;
+    font-size: 550%;
+    text-shadow: 3px 3px #098fa8;    
+}
+.btn {
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #098fa8;
+    border: 2px solid #098fa8;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.btn:hover {
+    color: #156377;
+    border: 2px solid #156377;    
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 300%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
+    }    
+}
