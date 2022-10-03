@@ -1,0 +1,64 @@
+@media (max-width:1030px) {
+    /* Home CSS */
+    .home .home-banner-1,
+    .home .home-banner-2{
+        background-position: 65% center;
+        min-height: 550px;
+    }
+    .home .home-banner .home-banner-text{
+        transform: translate(-80%, -50%);
+    }
+    /* Special CSS */
+
+}
+@media (max-width:991px) {
+    /* Home CSS */
+    .home .home-banner .home-banner-text{
+        transform: translate(-66%, -50%);
+    }
+    /* Special CSS */
+
+    /* Testimonial CSS */
+    
+}
+@media (max-width:767px) {
+    /* Home CSS */
+    .home .home-banner-1,
+    .home .home-banner-2{
+        background-position: 50% center;
+        min-height: 450px;
+    }
+    .home .home-banner .home-banner-text{
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+    .home .home-banner .home-banner-text h1{
+        font-size: 3rem;        
+    }
+    .home .home-banner .home-banner-text h2{
+        font-size: 1.2rem;        
+    }
+    .home .home-banner .home-banner-text .btn-danger{
+        padding: 00.5rem 1.5rem;      
+    }
+    .home .slider-icon{
+        font-size: 2rem;
+    }
+    /* Offerts CSS */
+
+    /* Product CSS */
+
+    /* Special CSS */
+
+    /* Testimonial CSS */
+    
+}
+@media (max-width:330px) {
+    /* Home CSS */
+    .home .home-banner .home-banner-text h2{
+        font-size: 1rem;        
+    }
+    /* Special CSS */
+    
+}

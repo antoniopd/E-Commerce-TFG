@@ -11,7 +11,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url(/img/forrest.png) no-repeat 50% 50%;
+    background: url(/assets/img/forrest.png) no-repeat 50% 50%;
     background-size: cover;
     display: table;
     top: 0;
