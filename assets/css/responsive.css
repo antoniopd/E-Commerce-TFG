@@ -8,6 +8,12 @@
     .home .home-banner .home-banner-text{
         transform: translate(-80%, -50%);
     }
+
+    /* Offer CSS */
+    .offers .offer-box .offer-info .heading-bigger{
+        font-size: 3rem;
+    }
+
     /* Special CSS */
 
 }
@@ -48,6 +54,9 @@
     /* Offerts CSS */
 
     /* Product CSS */
+    .products .up_to_content h2{
+        font-size: 0.75rem;
+    }
 
     /* Special CSS */
 
