@@ -5,12 +5,13 @@
     padding: 0;
 }
 :root{
-    /* Declarando Variables de Background Color  */
+    /* Creamos variables para reitilizarlas durante todo el proyecto (variable creation) */
+    /* Declarando Variables de (Background Color)  */
     --bg-danger:#f63440;
     --bg-white:#fff;
     --bg-light-white:#f5f5f5;
 
-    /* Declarando Variables de Text Color */
+    /* Declarando Variables de (Text Color) */
     --primary-font:"Poppins", sans-serif;
     --text-white:#fff;
     --text-black:#121212;
@@ -78,10 +79,10 @@ p{
     position: relative;
 }
 .home .home-banner-1{
-    background-image: url('../img/slide1.jpg');
+    background-image: url('../img/github-slide1.jpg');
 }
 .home .home-banner-2{
-    background-image: url('../img/slide2.jpg');
+    background-image: url('../img/github-slide1.jpg');
 }
 .home .home-banner .home-banner-text{
     position:absolute;
@@ -91,6 +92,10 @@ p{
 }
 .home .home-banner .home-banner-text h1{
    font-size: 6rem;
+   color: var(--text-white);
+}
+.home .home-banner .home-banner-text h2{
+    color: var(--text-white);
 }
 .home .carousel-indicators [data-bs-target]{
     background-color: var(--bg-danger);
@@ -476,4 +481,10 @@ p{
 }
 #scrollUp.scrollActive{
     display: block;
+}
+
+#logo{
+ 
+    height: 60px;
+    width: 80px;
 }

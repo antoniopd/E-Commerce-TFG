@@ -1,4 +1,4 @@
-// Special Countdown
+// Especial cuenta atrás (Special Countdown)
 let daysItem = document.querySelector("#days");
 let hoursItem = document.querySelector("#hours");
 let minItem = document.querySelector("#min");
@@ -40,7 +40,7 @@ function scrollTopBack(){
 scrollTopBack();
 
 
-// nav hide
+// Navegar dentro de la pagina (nav hide)
 let navBar = document.querySelectorAll('.nav-link');
 let navCollapse = document.querySelector('.navbar-collapse.collapse');
 navBar.forEach(function(a){
