@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title>E-Commerce</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Iconos CSS (import icons from themify) -->
-    <link rel="stylesheet" href="./assets/css/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
 
     <!-- Bootstrap 5.2.2 CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpg" href="./assets/img/PngItem_112730 - copia.ico"/>
-</head>
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="./assets/img/PngItem_112730 - copia.ico"
+    />
+  </head> <!-- aqui en body iria  onload="myWelcome()"-->
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NavBar sección -->
     <section id="header">
-        <nav class="navbar navbar-expand-lg bg-white fixed-top">
-            <div class="container" style="
-            padding-left: 12px;
-            margin-left: 10px;
-        ">
-              <a class="navbar-brand" href="#">
-                <img src="assets/img/FrikiGit-logo.png" id="logo" class="img-fluid" alt="logo-empresa">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ti-align-justify"></span>
-                <!-- <span class="navbar-toggler-icon"></span> -->
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#products">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#special">Special</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonial">Testimonios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container" style="padding-left: 12px; margin-left: 10px">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/img/FrikiGit-logo.png"
+              id="logo"
+              class="img-fluid"
+              alt="logo-empresa"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="ti-align-justify"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#special">Special</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
-
-
-
     <!--  Home sección -->
-<section id="home" class="home pt-5 overflow-hidden">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <section id="home" class="home pt-5 overflow-hidden">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-           <div class="home-banner home-banner-1">
-            <div class="home-banner-text">
+            <div class="home-banner home-banner-1">
+              <div class="home-banner-text">
                 <h1>FrikiGit</h1>
                 <h2>52% Descuento para esta sesión</h2>
-                <a href="#" class="btn btn-danger text-uppercase mt-4">Tus productos</a>
+                <a href="#" class="btn btn-danger text-uppercase mt-4"
+                  >Tus productos</a
+                >
+              </div>
             </div>
-           </div>
           </div>
           <div class="carousel-item">
             <div class="home-banner home-banner-2">
-                <div class="home-banner-text">
-                    <h1>E-Shop</h1>
-                    <h2>Tarjeta de credito & Pay Pal</h2>
-                    <a href="#" class="btn btn-danger text-uppercase mt-4">Tus productos</a>
-                </div>
-               </div>
+              <div class="home-banner-text">
+                <h1>E-Shop</h1>
+                <h2>Tarjeta de credito & Pay Pal</h2>
+                <a href="#" class="btn btn-danger text-uppercase mt-4"
+                  >Tus productos</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true">
             <span class="ti-angle-left slider-icon"></span>
           </span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true">
             <span class="ti-angle-right slider-icon"></span>
           </span>
@@ -104,292 +146,422 @@
         </button>
       </div>
 
-    <!-- Offert sección -->
-    <div class="offers">
-      <div class="container">
-        <div class="row">
-          <!-- Offer Box One -->
-          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
-            <a href="#">
-              <div class="offer-box text-center position-relative">
-                <div class="offer-inner">
-                  <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/chico-entero500x375.jpg" alt="Offers" class="img-fluid">
-                    <div class="offer-overlay"></div>
-                  </div>
-                  <div class="offer-info">
-                    <div class="offer-info-inner">
-                      <p class="heading-bigger text-capitalize">rebaja 30%</p>
-                    <p class="offer-title-1 text-uppercase font-weight-bold">No pierdas esta oportunidad</p>
-                    <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Comprar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Offer Box Two -->
-          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
-            <a href="#">
-              <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
-                <div class="offer-inner">
-                  <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/camiseta-azul375x240.jpg" alt="Offers" class="img-fluid">
-                    <div class="offer-overlay"></div>
-                  </div>
-                  <div class="offer-info">
-                    <div class="offer-info-inner">
-                      <p class="heading-bigger text-capitalize">rebaja 70%</p>
-                    <p class="offer-title-1 text-uppercase font-weight-bold">No pierdas esta oportunidad</p>
-                    <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Comprar</button>
-                    </div>                    
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="offer-box text-center position-relative">
-                <div class="offer-inner">
-                  <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/tazas375x240.jpg" alt="Offers" class="img-fluid">
-                    <div class="offer-overlay"></div>
-                  </div>
-                  <div class="offer-info">
-                    <div class="offer-info-inner">
-                      <p class="heading-bigger text-capitalize">rebaja 50%</p>
-                    <p class="offer-title-1 text-uppercase font-weight-bold">No pierdas esta oportunidad</p>
-                    <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Comprar</button>
-                    </div>                    
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Offer Box Three -->
-          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
-            <a href="#">
-              <div class="offer-box text-center position-relative">
-                <div class="offer-inner">
-                  <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/chicagithub500x375.jpg" alt="Offers" class="img-fluid">
-                    <div class="offer-overlay"></div>
-                  </div>
-                  <div class="offer-info">
-                    <div class="offer-info-inner">
-                      <p class="heading-bigger text-capitalize">rebaja 25%</p>
-                    <p class="offer-title-1 text-uppercase font-weight-bold">No pierdas esta oportunidad</p>
-                    <button type="button" class="btn btn-outline-danger text-uppercase mt-4">Comprar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Products sección -->
-      <section id="products" class="products">
+      <!-- Offert sección -->
+      <div class="offers">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="headline text-center mb-5">
-                <h2 class="pb-3 position-relative d-inline-block">PRODUCTOS DESTACADOS</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-             <div class="col-sm-6 col-lg-4">
-              <a href="#" class="d-block text-center mb-4">
-                <div class="product-list">
-                  <div class="product-image position-relative">
-                    <span class="sale">Descuento</span>
-                    <img src="assets/img/chica1-frente970x1000.jpg" class="img-fluid product-image-first" alt="products">
-                    <img src="assets/img/chica1-espaldas1.jpg" class="img-fluid product-image-secondary" alt="products">
-                  </div>
-                  <div class="product-name pt-3">
-                    <h3 class="text-capitalize">Camiseta manga corta chica</h3>
-                    <p class="mb-0 amount">10.00€ <del>15.00€</del></p>
-                    <div class="py-1">
-                      <span class="ti-star"></span>
-                      <span class="ti-star"></span>
-                      <span class="ti-star"></span>
-                      <span class="ti-star"></span>
-                      <span class="ti-star"></span>
+            <!-- Offer Box One -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <a href="#">
+                <div class="offer-box text-center position-relative">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/img/chico-entero500x375.jpg"
+                        alt="Offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
                     </div>
-                    <button type="button" class="add_to_card">AÑADIR</button>
+                    <div class="offer-info">
+                      <div class="offer-info-inner">
+                        <p class="heading-bigger text-capitalize">rebaja 30%</p>
+                        <p
+                          class="offer-title-1 text-uppercase font-weight-bold"
+                        >
+                          No pierdas esta oportunidad
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger text-uppercase mt-4"
+                        >
+                          Comprar
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </a>
-             </div>
-              <div class="col-sm-6 col-lg-4">
-                <a href="#" class="d-block text-center mb-4">
-                  <div class="product-list">
-                    <div class="product-image position-relative">                      
-                      <img src="assets/img/chico-entero-frente970x1000.jpg" class="img-fluid product-image-first" alt="products">
-                      <img src="assets/img/chico-entero-espalda907x1000.jpg" class="img-fluid product-image-secondary" alt="products">
-                    </div>
-                    <div class="product-name pt-3">
-                      <h3 class="text-capitalize">Camiseta casual chico</h3>
-                      <p class="mb-0 amount">15.00€</p>
-                      <div class="py-1">
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star"></span>
-                        <span class="ti-star"></span>
-                      </div>
-                      <button type="button" class="add_to_card">AÑADIR</button>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <a href="#" class="d-block text-center mb-4">
-                  <div class="product-list">
-                    <div class="product-image position-relative">                      
-                      <img src="assets/img/chica2-frente970x1000.jpg" class="img-fluid product-image-first" alt="products">
-                      <img src="assets/img/chica2-espaldas.jpg.jpg" class="img-fluid product-image-secondary" alt="products">
-                    </div>
-                    <div class="product-name pt-3">
-                      <h3 class="text-capitalize">Camisetas chica dos colores</h3>
-                      <p class="mb-0 amount">15.00€</p>
-                      <div class="py-1">
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star"></span>
-                        <span class="ti-star"></span>
-                      </div>
-                      <button type="button" class="add_to_card">AÑADIR</button>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <a href="#" class="d-block text-center mb-4">
-                  <div class="product-list">
-                    <div class="product-image position-relative">                      
-                      <img src="assets/img/chico5-gris-frente970x100.jpg" class="img-fluid product-image-first" alt="products">
-                      <img src="assets/img/chico5-gris-espalda970x1000.jpg" class="img-fluid product-image-secondary" alt="products">
-                    </div>
-                    <div class="product-name pt-3">
-                      <h3 class="text-capitalize">Camiseta chico gris</h3>
-                      <p class="mb-0 amount">12.00€</p>
-                      <div class="py-1">
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star"></span>
-                        <span class="ti-star"></span>
-                      </div>
-                      <button type="button" class="add_to_card">AÑADIR</button>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <a href="#" class="d-block text-center mb-4">
-                  <div class="product-list">
-                    <div class="product-image position-relative">
-                      <span class="sale">Rebaja</span>
-                      <img src="assets/img/chica3-frente-blk970x1000.jpg" class="img-fluid product-image-first" alt="products">
-                      <img src="assets/img/chica3-espalda-blk970x1000.jpg" class="img-fluid product-image-secondary" alt="products">
-                    </div>
-                    <div class="product-name pt-3">
-                      <h3 class="text-capitalize">Camiseta de chica negra</h3>
-                      <p class="mb-0 amount">10.00€ <del>15.00€</del></p>
-                      <div class="py-1">
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star"></span>
-                        <span class="ti-star"></span>
-                      </div>
-                      <button type="button" class="add_to_card">AÑADIR</button>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <a href="#" class="d-block text-center mb-4">
-                  <div class="product-list">
-                    <div class="product-image position-relative">
-                      <span class="sale">Rebaja</span>                      
-                      <img src="assets/img/chico3-frente970X1000.jpg" class="img-fluid product-image-first" alt="products">
-                      <img src="assets/img/chico3-espaldas970X1000.jpg" class="img-fluid product-image-secondary" alt="products">
-                    </div>
-                    <div class="product-name pt-3">
-                      <h3 class="text-capitalize">camiseta de chico manga larga</h3>
-                      <p class="mb-0 amount">12.50€ <del>25.00€</del></p>
-                      <div class="py-1">
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star active"></span>
-                        <span class="ti-star"></span>
-                        <span class="ti-star"></span>
-                      </div>
-                      <button type="button" class="add_to_card">AÑADIR</button>
-                    </div>
-                  </div>
-                </a>
-              </div>
             </div>
-
-            <!-- UP to 75% OFF -->
-            <div class="overflow-hidden my-5">
-              <div class="row">
-                <div class="col-sm-12 up_to_off">
-                  <img src="assets/img/ropitas1170x200.jpg" alt="offers" class="img-fluid w-100">
-                  <div class="up_to_content">
-                    <h2>HASTA UN 75 % DESCUENTO</h2>
+            <!-- Offer Box Two -->
+            <div
+              class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between"
+            >
+              <a href="#">
+                <div
+                  class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0"
+                >
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/img/camiseta-azul375x240.jpg"
+                        alt="Offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                    <div class="offer-info">
+                      <div class="offer-info-inner">
+                        <p class="heading-bigger text-capitalize">rebaja 70%</p>
+                        <p
+                          class="offer-title-1 text-uppercase font-weight-bold"
+                        >
+                          No pierdas esta oportunidad
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger text-uppercase mt-4"
+                        >
+                          Comprar
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
+              <a href="#">
+                <div class="offer-box text-center position-relative">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/img/tazas375x240.jpg"
+                        alt="Offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                    <div class="offer-info">
+                      <div class="offer-info-inner">
+                        <p class="heading-bigger text-capitalize">rebaja 50%</p>
+                        <p
+                          class="offer-title-1 text-uppercase font-weight-bold"
+                        >
+                          No pierdas esta oportunidad
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger text-uppercase mt-4"
+                        >
+                          Comprar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
 
+            <!-- Offer Box Three -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <a href="#">
+                <div class="offer-box text-center position-relative">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/img/chicagithub500x375.jpg"
+                        alt="Offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                    <div class="offer-info">
+                      <div class="offer-info-inner">
+                        <p class="heading-bigger text-capitalize">rebaja 25%</p>
+                        <p
+                          class="offer-title-1 text-uppercase font-weight-bold"
+                        >
+                          No pierdas esta oportunidad
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger text-uppercase mt-4"
+                        >
+                          Comprar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-      </section>
+        </div>
+      </div>
+    </section>
 
-    <!-- Special sección -->
-      <section id="special" class="special">
-        <div class="container">
+    <!-- Products sección -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative d-inline-block">
+                PRODUCTOS DESTACADOS
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Producto 1 -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">Rebaja</span>
+                  <img
+                    src="assets/img/chica1-frente970x1000.jpg"
+                    class="img-fluid product-image-first"
+                    alt="products"
+                  />
+                  <img
+                    src="assets/img/chica1-espaldas1.jpg"
+                    class="img-fluid product-image-secondary"
+                    alt="products"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Camiseta manga corta chica</h3>
+                  <p class="mb-0 amount">10.00€ <del>15.00€</del></p>
+                  <div class="py-1">
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">AÑADIR</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Producto 2 -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/img/chico-entero-frente970x1000.jpg"
+                    class="img-fluid product-image-first"
+                    alt="products"
+                  />
+                  <img
+                    src="assets/img/chico-entero-espalda907x1000.jpg"
+                    class="img-fluid product-image-secondary"
+                    alt="products"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Camiseta casual chico</h3>
+                  <p class="mb-0 amount">15.00€</p>
+                  <div class="py-1">
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">AÑADIR</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Producto 3 -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/img/chica2-frente970x1000.jpg"
+                    class="img-fluid product-image-first"
+                    alt="products"
+                  />
+                  <img
+                    src="assets/img/chica2-espaldas.jpg.jpg"
+                    class="img-fluid product-image-secondary"
+                    alt="products"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Camisetas chica dos colores</h3>
+                  <p class="mb-0 amount">15.00€</p>
+                  <div class="py-1">
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">AÑADIR</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Producto 4 -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/img/chico5-gris-frente970x100.jpg"
+                    class="img-fluid product-image-first"
+                    alt="products"
+                  />
+                  <img
+                    src="assets/img/chico5-gris-espalda970x1000.jpg"
+                    class="img-fluid product-image-secondary"
+                    alt="products"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Camiseta chico gris</h3>
+                  <p class="mb-0 amount">12.00€</p>
+                  <div class="py-1">
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">AÑADIR</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Producto 5 -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">Rebaja</span>
+                  <img
+                    src="assets/img/chica3-frente-blk970x1000.jpg"
+                    class="img-fluid product-image-first"
+                    alt="products"
+                  />
+                  <img
+                    src="assets/img/chica3-espalda-blk970x1000.jpg"
+                    class="img-fluid product-image-secondary"
+                    alt="products"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Camiseta de chica negra</h3>
+                  <p class="mb-0 amount">10.00€ <del>15.00€</del></p>
+                  <div class="py-1">
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">AÑADIR</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Producto 6 -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <span class="sale">Rebaja</span>
+                  <img
+                    src="assets/img/chico3-frente970X1000.jpg"
+                    class="img-fluid product-image-first"
+                    alt="products"
+                  />
+                  <img
+                    src="assets/img/chico3-espaldas970X1000.jpg"
+                    class="img-fluid product-image-secondary"
+                    alt="products"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">camiseta de chico manga larga</h3>
+                  <p class="mb-0 amount">12.50€ <del>25.00€</del></p>
+                  <div class="py-1">
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">AÑADIR</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- UP to 75% OFF -->
+        <div class="overflow-hidden my-5">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="headline text-center mb-5">
-                <h2 class="pb-3 position-relative d-inline-block">OFERTA DE INAUGURACIÓN</h2>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-lg-7 text-center text-lg-start">
-              <div class="countdown-container">
-                <h2 class="text-uppercase">Camiseta Edición Especial Chica</h2>
-                <p class="my-4">Llévate esta maravillosa camiseta edición exclusiva a un precio muy reducido, únicamente estará disponible esta oferta por tiempo limitado hasta terminar la cuenta atrás, aprovecha esta oportunidad. </p>
-                <ul class="list-unstyled countdown-counter">
-                  <li><span class="fs-1 d-block" id="days">00</span> Days</li>
-                  <li><span class="fs-1 d-block" id="hours">00</span>Hr</li>
-                  <li><span class="fs-1 d-block" id="min">00</span>Min</li>
-                  <li><span class="fs-1 d-block" id="sec">00</span>Sec</li>
-                </ul>
-                <span class="countdown-price h3 d-block mb-4">9.99€ <del>30.00€</del></span>
-                <button type="button" class="btn btn-danger">AÑADIR</button>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-5">
-              <div class="special-img position-relative">
-                <span class="sale">Sale</span>
-                <img src="assets/img/especial-negra-frente.png" class="img-fluid" alt="">
-                <img src="assets/img/especial-negra-espalda.png" class="img-fluid image-dos" alt="">
+            <div class="col-sm-12 up_to_off">
+              <img
+                src="assets/img/ropitas1170x200.jpg"
+                alt="offers"
+                class="img-fluid w-100"
+              />
+              <div class="up_to_content">
+                <h2>HASTA UN 75 % DESCUENTO</h2>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!-- Special sección -->
+    <section id="special" class="special">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative d-inline-block">
+                OFERTA DE INAUGURACIÓN
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-7 text-center text-lg-start">
+            <div class="countdown-container">
+              <h2 class="text-uppercase">Camiseta Edición Especial Chica</h2>
+              <p class="my-4">
+                Llévate esta maravillosa camiseta edición exclusiva a un precio
+                muy reducido, únicamente estará disponible esta oferta por
+                tiempo limitado hasta terminar la cuenta atrás, aprovecha esta
+                oportunidad.
+              </p>
+              <ul class="list-unstyled countdown-counter">
+                <li><span class="fs-1 d-block" id="days">00</span> Days</li>
+                <li><span class="fs-1 d-block" id="hours">00</span>Hr</li>
+                <li><span class="fs-1 d-block" id="min">00</span>Min</li>
+                <li><span class="fs-1 d-block" id="sec">00</span>Sec</li>
+              </ul>
+              <span class="countdown-price h3 d-block mb-4"
+                >9.99€ <del>30.00€</del></span
+              >
+              <button type="button" class="btn btn-danger">AÑADIR</button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-5">
+            <div class="special-img position-relative">
+              <span class="sale">Rebaja</span>
+              <img
+                src="assets/img/especial-negra-frente.png"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="assets/img/especial-negra-espalda.png"
+                class="img-fluid image-dos"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonial sección -->
     <section id="testimonial" class="testimonial">
@@ -401,48 +573,95 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
-            <div id="carouselExampleIndicatorsTwo" class="carousel slide" data-bs-ride="carousel">
+            <div
+              id="carouselExampleIndicatorsTwo"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicatorsTwo"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicatorsTwo"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                 <div class="testimonial-wrapper">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <img src="assets/img/user.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="username">
-                      <h3> Martína Lopez, Influencer / Youtuber</h3>
-                      <span>El Rincón de Martina</span>
-                      <p>Esta web me la recomendó una amiga y estoy encantada con la rapidez del envío y la calidad de las camisetas, siempre realizo los unboxings en mi canal de YouTube (www.youtube/elricondemartina.com) </p>
+                  <div class="testimonial-wrapper">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img
+                          src="assets/img/user.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="username">
+                        <h3>Martína Lopez, Influencer / Youtuber</h3>
+                        <span>El Rincón de Martina</span>
+                        <p>
+                          Esta web me la recomendó una amiga y estoy encantada
+                          con la rapidez del envío y la calidad de las
+                          camisetas, siempre realizo los unboxings en mi canal
+                          de YouTube (www.youtube/elricondemartina.com)
+                        </p>
+                      </div>
                     </div>
                   </div>
-                 </div>
                 </div>
                 <div class="carousel-item">
                   <div class="testimonial-wrapper">
                     <div class="row">
                       <div class="col-sm-12">
-                        <img src="assets/img/yo(1).jpg" alt="" class="img-fluid">
+                        <img
+                          src="assets/img/yo(1).jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
                       </div>
                       <div class="username">
-                        <h3> Antonio PDev, Co-Founder / CEO</h3>
+                        <h3>Antonio PDev, Co-Founder / CEO</h3>
                         <span>FrikiGit company ltd.</span>
-                        <p>Después de varios meses de trabajo intenso, frustraciones y alegrías os traigo mi proyecto final. Una pagina web E-commerce y responsive, estoy muy contento de poder ofreceros este proyecto, espero que os guste, cualquier duda o sugerencia  podéis dejarla en la sección de contacto al final de  la pagina. Gracias un saludo ! </p>
+                        <p>
+                          Después de varios meses de trabajo intenso,
+                          frustraciones y alegrías os traigo mi proyecto final.
+                          Una pagina web E-commerce y responsive, estoy muy
+                          contento de poder ofreceros este proyecto, espero que
+                          os guste, cualquier duda o sugerencia podéis dejarla
+                          en la sección de contacto al final de la pagina.
+                          Gracias un saludo !
+                        </p>
                       </div>
                     </div>
-                   </div>
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide="prev">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicatorsTwo"
+                data-bs-slide="prev"
+              >
                 <span class="carousel-control-prev-icon" aria-hidden="true">
                   <span class="ti-angle-left slider-icon"></span>
                 </span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide="next">
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicatorsTwo"
+                data-bs-slide="next"
+              >
                 <span class="carousel-control-next-icon" aria-hidden="true">
                   <span class="ti-angle-right slider-icon"></span>
                 </span>
@@ -486,21 +705,42 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Tú nombre">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id="name"
+                        placeholder="Tú nombre"
+                      />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Dirección de Email">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Dirección de Email"
+                      />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="textarea" name="message" id="message" cols="30" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                      <textarea
+                        class="textarea"
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="4"
+                        placeholder="Escribe tu mensaje"
+                      ></textarea>
                     </div>
                   </div>
-                  <div class="col-md-12">                   
-                      <button class="btn btn-danger"><span class="ti-rocket pe-2 fs-5"> Enviar Mensaje</span></button>                    
+                  <div class="col-md-12">
+                    <button class="btn btn-danger">
+                      <span class="ti-rocket pe-2 fs-5"> Enviar Mensaje</span>
+                    </button>
                   </div>
                 </div>
               </form>
@@ -510,34 +750,37 @@
       </div>
     </section>
 
-
     <!-- Footer sección -->
     <footer>
       <div class="p-3 copyright">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
-              <p class="my-0">Copyright © 2022 <a href="#">FrikiGit </a>Todos los Derechos Reservados</p>
+              <p class="my-0">
+                Copyright © 2022 <a href="#">FrikiGit </a>Todos los Derechos
+                Reservados
+              </p>
             </div>
             <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
-              <p>Diseñado por <a href="#" target="_blank" style="color: black; font-weight: bold;">AntonioPDev</a>.</p>
+              <p>
+                Diseñado por
+                <a
+                  href="#"
+                  target="_blank"
+                  style="color: black; font-weight: bold"
+                  >AntonioPDev</a
+                >.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-
-    <!-- Scroll Back To Top -->    
+    <!-- Scroll Back To Top -->
     <div id="scrollUp" title="Scroll To Top">
       <a href="#home"><span class="ti-arrow-up fs-4 text-white"></span></a>
     </div>
-
-
-
-
-
-
 
     <a href="welcome.html">Back to Welcome</a>
 
@@ -545,6 +788,12 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Main  JS externo -->
-    <script src="assets/js/main.js"></script>
-</body>
+    <!-- <script>      
+      ((intento de crear onload que manda a la pag welcome))
+        function myWelcome() {
+        location.href = "./html/welcome.html";        
+      }      
+    </script> -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

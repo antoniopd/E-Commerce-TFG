@@ -58,6 +58,11 @@ p{
     padding:0.5rem 1rem;
     text-align: center;
 }
+a.navbar-brand{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 50px;
+}
 #header .navbar-nav .nav-item .nav-link:hover,
 #header .navbar-nav .nav-item .nav-link.active{
     color: var(--text-danger);
