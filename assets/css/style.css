@@ -74,6 +74,23 @@ a.navbar-brand{
 #header .navbar-toggler:focus{
     box-shadow: none;
 }
+.navbar-toggler:hover{
+    color: var(--text-danger);
+}
+#boton-carrito{
+    border: none;
+    color: var(--text-danger);
+    font-size: 25px;
+    background-color: var(--bg-white);
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+#boton-carrito:hover{
+    cursor: pointer;
+    color: var(--text-danger);
+    background-color: var(--bg-light-white);
+}
 /* Home CSS */
 .home .home-banner-1,
 .home .home-banner-2{
