@@ -8,6 +8,9 @@
     .home .home-banner .home-banner-text{
         transform: translate(-80%, -50%);
     }
+    /* .boton-carrito{
+        align-items: ;
+    } */
 
     /* Offer CSS */
     .offers .offer-box .offer-info .heading-bigger{
@@ -18,13 +21,15 @@
     .special .countdown-container .countdown-counter li{
         padding: 1.5rem 1rem;
     }
+    
 
 }
 @media (max-width:991px) {
     /* Home CSS */
     .home .home-banner .home-banner-text{
         transform: translate(-66%, -50%);
-    }
+    }    
+  
     /* Special CSS */
     .special .countdown-container{
         padding-top: 1rem;
@@ -42,6 +47,7 @@
 }
 @media (max-width:767px) {
     /* Home CSS */
+   
     .home .home-banner-1,
     .home .home-banner-2{
         background-position: 50% center;
