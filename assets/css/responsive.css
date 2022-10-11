@@ -1,3 +1,9 @@
+@media (max-width:1700px) {
+/* Home CSS */
+.offers .offer-box .offer-info .heading-bigger {
+    font-size: 3rem;
+}
+}
 @media (max-width:1030px) {
     /* Home CSS */
     .home .home-banner-1,
@@ -71,6 +77,11 @@
         font-size: 2rem;
     }
     /* Offerts CSS */
+    .offers .offer-box .offer-info .heading-bigger {
+        font-size: 2rem;
+    }
+    
+
 
     /* Product CSS */
     .products .up_to_content h2{
@@ -94,7 +105,18 @@
     .testimonial .carousel-control-next{
         display: none;
     }
-    
+}
+   
+@media (max-width:576px){
+    .offers .offer-box .offer-info .heading-bigger {
+        font-size: 4rem;
+    }
+}
+@media (max-width:423px) {
+    /* Home CSS */
+    .home .home-banner .home-banner-text h2{
+        font-size: 2rem;        
+    }
 }
 @media (max-width:330px) {
     /* Home CSS */
@@ -107,3 +129,4 @@
         font-size: 0.625rem;
     }
 }
+

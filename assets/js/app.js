@@ -6,7 +6,7 @@ let carrito = []
 
 // Hago un forEach del array del stock de los productos y los guardo en (producto)
 stockProductos.forEach((producto) => {
-// Con innerHTML pinto el html dentro la constante que declaré de la sección de productos.
+// Con innerHTML pinto el html dentro de la constante que declaré de la sección de productos.
     contenedorProductos.innerHTML += `  
     <div class="col-sm-6 col-lg-4" id="1">
       <a href="#" class="d-block text-center mb-4">
@@ -28,10 +28,10 @@ stockProductos.forEach((producto) => {
             <h3 class="text-capitalize">${producto.desc}</h3>
             <p class="mb-0 amount">10.00€ <del>${producto.precio}€</del></p>
             <div class="py-1">
-              <span class="ti-star"></span>
-              <span class="ti-star"></span>
-              <span class="ti-star"></span>
-              <span class="ti-star"></span>
+              <span class="ti-star active"></span>
+              <span class="ti-star active"></span>
+              <span class="ti-star active"></span>
+              <span class="ti-star active"></span>
               <span class="ti-star"></span>
             </div>
             <button type="button" class="add_to_card" id="add_to_card${producto.id}">AÑADIR🛒</button>
