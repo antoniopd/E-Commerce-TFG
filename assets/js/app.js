@@ -67,9 +67,7 @@ stockProductos.forEach((producto) => {
 
     boton.addEventListener('click', () => {
       agregarAlCarrito(producto.id)
-  })
-  
-
+  }) 
 })
 
 
@@ -82,28 +80,30 @@ const agregarAlCarrito = (prodId) => {
         prod.cantidad++
       }
     })
-  }else{
-
-  
-
+  } else { 
     const item = stockProductos.find((prod) => prod.id === prodId)
     carrito.push(item)
+  }
     actualizarCarrito()    
-    console.log(carrito)
-}
-actualizarCarrito()
+   
 }
 
 const eliminarDelCarrito = (prodId) => {
   const item = carrito.find((prod) => prod.id === prodId)
+
   const indice = carrito.indexOf(item)
+
   carrito.splice(indice, 1)
+
   actualizarCarrito()
+
+  console.log(carrito)
 }
 
 
 
 const actualizarCarrito = () => {
+
   contenedorCarrito .innerHTML = ""
 
     carrito.forEach((prod) => {
@@ -118,7 +118,12 @@ const actualizarCarrito = () => {
         contenedorCarrito.appendChild(div)
 
         localStorage.setItem('carrito', JSON.stringify(carrito))
+
     })
+
     contadorCarrito.innerText = carrito.length
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
+
+    console.log(carrito)
+   
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
