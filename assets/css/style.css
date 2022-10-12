@@ -529,3 +529,31 @@ a.navbar-brand{
     height: 60px;
     width: 80px;
 }
+/* Modal Carrito */
+div .modal-footer{
+    justify-content: space-between;
+}
+.modal-title{
+    margin-left: 170px;
+}
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;   
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+.boton-eliminar:hover {
+    color: #43ec4e;
+}

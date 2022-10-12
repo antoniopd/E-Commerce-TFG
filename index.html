@@ -42,7 +42,7 @@
             />
           </a>
           <!-- Botón del carrito -->
-          <button class="boton-carrito " id="boton-carrito" ><i class="ti-shopping-cart" aria-hidden="true"></i><span class="contadorCarrito">0</span>
+          <button class="boton-carrito " id="boton-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="ti-shopping-cart" aria-hidden="true"></i> <span id="contadorCarrito">0</span>
           </button>          
           <button
             class="navbar-toggler"
@@ -111,7 +111,7 @@
               <div class="home-banner-text">
                 <h1>FrikiGit</h1>
                 <h2>52% Descuento para esta sesión</h2>
-                <a href="#" class="btn btn-danger text-uppercase mt-4"
+                <a href="#products" class="btn btn-danger text-uppercase mt-4"
                   >Tus productos</a
                 >
               </div>
@@ -122,7 +122,7 @@
               <div class="home-banner-text">
                 <h1>E-Shop</h1>
                 <h2>Tarjeta de credito & Pay Pal</h2>
-                <a href="#" class="btn btn-danger text-uppercase mt-4"
+                <a href="#products" class="btn btn-danger text-uppercase mt-4"
                   >Tus productos</a
                 >
               </div>
@@ -761,6 +761,24 @@
         </div>
       </div>
     </section>
+    <!-- Modal Contenedor Carrito  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito 🛒</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="carrito-contenedor">            
+          </div>
+          <div class="modal-footer">
+            <p class="precioProducto">Precio total: €<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" type="button" class="btn btn-danger" >Vaciar carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 <!-- Footer sección -->
     <footer>
