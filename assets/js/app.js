@@ -8,6 +8,7 @@ const botonVaciar = document.getElementById('vaciar-carrito')
 const contadorCarrito = document.getElementById('contadorCarrito')
 const precioTotal = document.getElementById('precioTotal')
 
+
 let carrito = []
 
 // Para almacenar los datos en localStorage y no perder los items de carrito
@@ -17,10 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     actualizarCarrito()
   }
 })
-
+// Añado el localStorage.clear() para borrar el almacenamiento local al apretar el botón de vaciar carrito
 botonVaciar.addEventListener('click', () => {
   carrito.length = 0
   actualizarCarrito()
+  localStorage.clear()
 })
 
 // Hago un forEach del array del stock de los productos y los guardo en (producto)
@@ -28,9 +30,10 @@ stockProductos.forEach((producto) => {
   const div = document.createElement('div')
   div.classList.add('col-sm-6')
 // Con innerHTML pinto el html dentro de la constante que declaré de la sección de productos.
+// he quitado el href de a 
     div.innerHTML = `  
     
-      <a href="#exampleModal" class="d-block text-center mb-4">
+      <a class="d-block text-center mb-4">
         <div class="product-list">
           <div class="product-image position-relative">
             <span class="sale">Rebaja</span>
@@ -68,6 +71,11 @@ stockProductos.forEach((producto) => {
     boton.addEventListener('click', () => {
       agregarAlCarrito(producto.id)
   }) 
+  // PROBANDO BOTON ESPECIAL
+//   const botonSpecial = document.getElementById('add_to_card5')
+// botonSpecial.addEventListener('click', () => {
+//   agregarAlCarrito(producto.id)
+// }) 
 })
 
 
@@ -110,6 +118,7 @@ const actualizarCarrito = () => {
         const div = document.createElement('div')
         div.className = ('productoEnCarrito')
         div.innerHTML = `
+        <img class="imag" src=${prod.img[0]} alt="productos" />
         <p>${prod.nombre}</p>
         <p>Precio: ${prod.precio}€</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
@@ -124,6 +133,6 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length
 
     console.log(carrito)
-   
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+  //  Del precio total lo fijamos a solo dos decimales con .toFixed(2)
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0).toFixed(2)
 }

@@ -557,3 +557,7 @@ div .modal-footer{
 .boton-eliminar:hover {
     color: #43ec4e;
 }
+.imag{
+    width: 40px;
+    height: 40px;
+}
