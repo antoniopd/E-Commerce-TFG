@@ -7,5 +7,6 @@ let stockProductos = [
     {id: 6, nombre: "Camiseta ml", tipo: "", cantidad: 1, desc: "Camiseta de chico manga larga", precio: 12.99, descuento: 15.00, img: ['assets/img/chico3-frente970X1000.jpg','assets/img/chico3-espaldas970X1000.jpg']}
      
 ]
-
-// {id: 7, nombre: "Camiseta special", tipo: "", cantidad: 1, desc: "Camiseta Edición Especial Chica", precio: 9.99, descuento: 30.00, img: ['assets/img/especial-negra-frente.png','assets/img/especial-negra-espalda.png']}     
+let specialProductos = [
+    {id: 1, nombre: "Camiseta special", tipo: "", cantidad: 1, desc: "Camiseta Edición Especial Chica", precio: 9.99, descuento: 30.00, img: ['assets/img/especial-negra-frente.png','assets/img/especial-negra-espalda.png']}     
+]

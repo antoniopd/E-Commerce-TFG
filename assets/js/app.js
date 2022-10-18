@@ -25,12 +25,13 @@ botonVaciar.addEventListener('click', () => {
   localStorage.clear()
 })
 
+// ***  PRODUCTOS ***
 // Hago un forEach del array del stock de los productos y los guardo en (producto)
 stockProductos.forEach((producto) => {
   const div = document.createElement('div')
   div.classList.add('col-sm-6')
-// Con innerHTML pinto el html dentro de la constante que declaré de la sección de productos.
-// he quitado el href de a 
+ // Con innerHTML pinto el html dentro de la constante que declaré de la sección de productos.
+ // he quitado el href de a 
     div.innerHTML = `  
     
       <a class="d-block text-center mb-4">
@@ -71,12 +72,8 @@ stockProductos.forEach((producto) => {
     boton.addEventListener('click', () => {
       agregarAlCarrito(producto.id)
   }) 
-  // PROBANDO BOTON ESPECIAL
-//   const botonSpecial = document.getElementById('add_to_card5')
-// botonSpecial.addEventListener('click', () => {
-//   agregarAlCarrito(producto.id)
-// }) 
 })
+
 
 
 const agregarAlCarrito = (prodId) => {
@@ -136,3 +133,4 @@ const actualizarCarrito = () => {
   //  Del precio total lo fijamos a solo dos decimales con .toFixed(2)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0).toFixed(2)
 }
+
