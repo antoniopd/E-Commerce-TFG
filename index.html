@@ -27,7 +27,7 @@
     <script defer src="assets/js/stock.js"></script>
     <script defer src="assets/js/app.js"></script>
   </head> 
-<!-- aqui en body iria  onload="myWelcome()"-->
+<!-- BODY -->
   <body data-bs-spy="scroll" data-bs-target=".navbar">
 <!-- NavBar sección -->
     <section id="header">
@@ -816,11 +816,14 @@
     <script src="./assets/js/bootstrap.min.js"></script>
 
 <!-- Main  JS externo ((intento de crear onload que manda a la pag welcome)) -->
-    <!-- <script>            
-        function myWelcome() {
-        location.href = "./assets/html/welcome.html";        
-      }      
-    </script> -->  
+   
+    <script language=javascript> 
+      function ventanaSecundaria (URL){ 
+         window.open(URL,"ventana1","width=10000,height=10000,scrollbars=NO") 
+      } 
+      
+      ventanaSecundaria("./assets/html/welcome.html"); 
+      </script>
     <script src="./assets/js/main.js"></script>   
   </body>
 </html>
