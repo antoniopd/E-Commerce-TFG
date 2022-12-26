@@ -22,11 +22,11 @@ let countDown = () => {
 
 countDown()
 
-setInterval(countDown, 1000)
+setInterval(countDown, 1000) // 1000 = 1segundo
 
 
 // Scroll Volver arriva (back to top)
-function scrollTopBack(){
+function scrollTopBack(){ // Funcion para volver arriba de la pagina con el boton de scroll up
     let scrollTopButton = document.querySelector("#scrollUp");
     window.onscroll = function (){
         var scroll = document.documentElement.scrollTop;
@@ -37,11 +37,11 @@ function scrollTopBack(){
         }
     }
 }
-scrollTopBack();
+scrollTopBack(); // Llamo a la funcion para que se ejecute al cargar la pagina
 
 
-// Navegar dentro de la pagina (nav hide)
-let navBar = document.querySelectorAll('.nav-link');
+// Navegar dentro de la pagina (nav hide) 
+let navBar = document.querySelectorAll('.nav-link'); // selecciono todos los elementos con la clase nav-link y los guardo en una variable llamada navBar 
 let navCollapse = document.querySelector('.navbar-collapse.collapse');
 navBar.forEach(function(a){
     a.addEventListener("click", function(){
