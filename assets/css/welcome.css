@@ -22,6 +22,11 @@ html, body {
     text-align: center;
     padding-bottom: 25%;
 }
+.animate__animated{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .content h1 {
     font-family: 'Open Sans', sans-serif;
     color: #f9f3f4;
