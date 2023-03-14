@@ -1,313 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>E-Commerce</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Iconos CSS (import icons from themify) -->
-    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
+<head>
+  <title>FrikiGit</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap 5.2.2 CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Iconos CSS (import icons from themify) -->
+  <link rel="stylesheet" href="./assets/css/themify-icons.css" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Bootstrap 5.2.2 CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/jpg"
-      href="./assets/img/PngItem_112730.png"
-    />
-    <script defer src="assets/js/stock.js"></script>
-    <script defer src="assets/js/app.js"></script>
-  </head> 
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="./assets/img/PngItem_112730.png" />
+  <script defer src="assets/js/stock.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
 <!-- BODY -->
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
-<!-- NavBar sección -->
-    <section id="header">
-      <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container" style="padding-left: 12px; margin-left: 10px">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/img/FrikiGit-logo.png"
-              id="logo"
-              class="img-fluid"
-              alt="logo-empresa"
-            />
-          </a>
-<!-- Botón del carrito --> 
-          <button class="boton-carrito " id="boton-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="ti-shopping-cart" aria-hidden="true"></i> <span id="contadorCarrito">0</span>
-          </button>          
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="ti-align-justify"></span>
-          </button>          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#special">Special</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonial">Testimonios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
-              </li>
-            </ul>
-          </div>
 
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- NavBar sección -->
+  <section id="header">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container" style="padding-left: 12px; margin-left: 10px">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/FrikiGit-logo.png" id="logo" class="img-fluid" alt="logo-empresa" />
+        </a>
+        <!-- Botón del carrito -->
+        <button class="boton-carrito " id="boton-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+            class="ti-shopping-cart" aria-hidden="true"></i> <span id="contadorCarrito">0</span>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-align-justify"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#special">Special</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </section>
 
-<!--  Home sección -->
-    <section id="home" class="home pt-5 overflow-hidden">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="home-banner home-banner-1">
-              <div class="home-banner-text">
-                <h1>FrikiGit</h1>
-                <h2>Conoce Nuestra Historia</h2>
-                <a href="./assets/html/history.html" target="_blank" class="btn btn-danger text-uppercase mt-4"
-                  >Una historia Friki <img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt=""></a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="home-banner home-banner-2">
-              <div class="home-banner-text">
-                <h1>E-Shop</h1>
-                <h2>Tarjeta de credito & Pay Pal</h2>
-                <a href="./assets/html/welcome.html" class="btn btn-danger text-uppercase mt-4"
-                  >Terminos y condiciones</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true">
-            <span class="ti-angle-left slider-icon"></span>
-          </span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true">
-            <span class="ti-angle-right slider-icon"></span>
-          </span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+    </nav>
+  </section>
 
-<!-- Offert sección -->
-      <div class="offers">
-        <div class="container">
-          <div class="row">
-<!-- Offer Box One -->
-            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
-              <a href="#products">
-                <div class="offer-box text-center position-relative">
-                  <div class="offer-inner">
-                    <div class="offer-image position-relative overflow-hidden">
-                      <img
-                        src="assets/img/chico-entero500x375.jpg"
-                        alt="Offers"
-                        class="img-fluid"
-                      />
-                      <div class="offer-overlay"></div>
-                    </div>
-                    <div class="offer-info">
-                      <div class="offer-info-inner">
-                        <p class="heading-bigger text-capitalize">rebaja 30%</p>
-                        <p
-                          class="offer-title-1 text-uppercase font-weight-bold"
-                        >
-                          No pierdas esta oportunidad
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-outline-danger text-uppercase mt-4"
-                        >
-                          Comprar
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+  <!--  Home sección -->
+  <section id="home" class="home pt-5 overflow-hidden">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="home-banner home-banner-1">
+            <div class="home-banner-text">
+              <h1>FrikiGit</h1>
+              <h2>Conoce Nuestra Historia</h2>
+              <a href="./assets/html/history.html" target="_blank" class="btn btn-danger text-uppercase mt-4">Una
+                historia Friki <img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt=""></a>
             </div>
-<!-- Offer Box Two -->
-            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
-              <a href="#products">
-                <div
-                  class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0"
-                >
-                  <div class="offer-inner">
-                    <div class="offer-image position-relative overflow-hidden">
-                      <img
-                        src="assets/img/camiseta-azul375x240.jpg"
-                        alt="Offers"
-                        class="img-fluid"
-                      />
-                      <div class="offer-overlay"></div>
-                    </div>
-                    <div class="offer-info">
-                      <div class="offer-info-inner">
-                        <p class="heading-bigger text-capitalize">rebaja 70%</p>
-                        <p
-                          class="offer-title-1 text-uppercase font-weight-bold"
-                        >
-                          No pierdas esta oportunidad
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-outline-danger text-uppercase mt-4"
-                        >
-                          Comprar
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="#products">
-                <div class="offer-box text-center position-relative">
-                  <div class="offer-inner">
-                    <div class="offer-image position-relative overflow-hidden">
-                      <img
-                        src="assets/img/tazas375x240.jpg"
-                        alt="Offers"
-                        class="img-fluid"
-                      />
-                      <div class="offer-overlay"></div>
-                    </div>
-                    <div class="offer-info">
-                      <div class="offer-info-inner">
-                        <p class="heading-bigger text-capitalize">rebaja 50%</p>
-                        <p
-                          class="offer-title-1 text-uppercase font-weight-bold"
-                        >
-                          No pierdas esta oportunidad
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-outline-danger text-uppercase mt-4"
-                        >
-                          Comprar
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-<!-- Offer Box Three -->
-            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
-              <a href="#products">
-                <div class="offer-box text-center position-relative">
-                  <div class="offer-inner">
-                    <div class="offer-image position-relative overflow-hidden">
-                      <img
-                        src="assets/img/chicagithub500x375.jpg"
-                        alt="Offers"
-                        class="img-fluid"
-                      />
-                      <div class="offer-overlay"></div>
-                    </div>
-                    <div class="offer-info">
-                      <div class="offer-info-inner">
-                        <p class="heading-bigger text-capitalize">rebaja 25%</p>
-                        <p
-                          class="offer-title-1 text-uppercase font-weight-bold"
-                        >
-                          No pierdas esta oportunidad
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-outline-danger text-uppercase mt-4"
-                        >
-                          Comprar
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="home-banner home-banner-2">
+            <div class="home-banner-text">
+              <h1>E-Shop</h1>
+              <h2>Tarjeta de credito & Pay Pal</h2>
+              <a href="./assets/html/welcome.html" class="btn btn-danger text-uppercase mt-4">Terminos y condiciones</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <span class="ti-angle-left slider-icon"></span>
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <span class="ti-angle-right slider-icon"></span>
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-<!-- Productos sección -->
-    <section id="products" class="products">
+    <!-- Offert sección -->
+    <div class="offers">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <div class="headline text-center mb-5">
-              <h2 class="pb-3 position-relative d-inline-block">
-                PRODUCTOS DESTACADOS
-              </h2>
-            </div>
+          <!-- Offer Box One -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+            <a href="#products">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="assets/img/chico-entero500x375.jpg" alt="Offers" class="img-fluid" />
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">rebaja 30%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">
+                        No pierdas esta oportunidad
+                      </p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                        Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Offer Box Two -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
+            <a href="#products">
+              <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="assets/img/camiseta-azul375x240.jpg" alt="Offers" class="img-fluid" />
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">rebaja 70%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">
+                        No pierdas esta oportunidad
+                      </p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                        Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#products">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="assets/img/tazas375x240.jpg" alt="Offers" class="img-fluid" />
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">rebaja 50%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">
+                        No pierdas esta oportunidad
+                      </p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                        Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Offer Box Three -->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+            <a href="#products">
+              <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="assets/img/chicagithub500x375.jpg" alt="Offers" class="img-fluid" />
+                    <div class="offer-overlay"></div>
+                  </div>
+                  <div class="offer-info">
+                    <div class="offer-info-inner">
+                      <p class="heading-bigger text-capitalize">rebaja 25%</p>
+                      <p class="offer-title-1 text-uppercase font-weight-bold">
+                        No pierdas esta oportunidad
+                      </p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                        Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="row" id="contenedor-productos">
-<!--! Producto 1 -->
-         <!-- <div class="col-sm-6 col-lg-4" id="1">
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos sección -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-5">
+            <h2 class="pb-3 position-relative d-inline-block">
+              PRODUCTOS DESTACADOS
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="contenedor-productos">
+        <!--! Producto 1 -->
+        <!-- <div class="col-sm-6 col-lg-4" id="1">
             <a href="#" class="d-block text-center mb-4">
               <div class="product-list">
                 <div class="product-image position-relative">
@@ -338,8 +260,8 @@
               </div>
             </a>
           </div> -->
-<!--! Producto 2 -->
-          <!-- <div class="col-sm-6 col-lg-4" id="2">
+        <!--! Producto 2 -->
+        <!-- <div class="col-sm-6 col-lg-4" id="2">
             <a href="#" class="d-block text-center mb-4">
               <div class="product-list">
                 <div class="product-image position-relative">
@@ -369,7 +291,7 @@
               </div>
             </a>
           </div> -->
-<!--! Producto 3  -->
+        <!--! Producto 3  -->
         <!--  <div class="col-sm-6 col-lg-4" id="3">
             <a href="#" class="d-block text-center mb-4">
               <div class="product-list">
@@ -400,8 +322,8 @@
               </div>
             </a>
           </div> -->
-<!--! Producto 4 -->
-          <!-- <div class="col-sm-6 col-lg-4" id="4">
+        <!--! Producto 4 -->
+        <!-- <div class="col-sm-6 col-lg-4" id="4">
             <a href="#" class="d-block text-center mb-4">
               <div class="product-list">
                 <div class="product-image position-relative">
@@ -431,8 +353,8 @@
               </div>
             </a>
           </div> -->
-<!--! Producto 5 -->
-          <!-- <div class="col-sm-6 col-lg-4" id="5">
+        <!--! Producto 5 -->
+        <!-- <div class="col-sm-6 col-lg-4" id="5">
             <a href="#" class="d-block text-center mb-4">
               <div class="product-list">
                 <div class="product-image position-relative">
@@ -463,8 +385,8 @@
               </div>
             </a>
           </div> -->
-<!--! Producto 6 -->
-          <!-- <div class="col-sm-6 col-lg-4" id="6">
+        <!--! Producto 6 -->
+        <!-- <div class="col-sm-6 col-lg-4" id="6">
             <a href="#" class="d-block text-center mb-4">
               <div class="product-list">
                 <div class="product-image position-relative">
@@ -495,329 +417,265 @@
               </div>
             </a>
           </div> -->
+      </div>
+
+      <!-- UP to 75% OFF -->
+      <div class="overflow-hidden my-5">
+        <div class="row">
+          <div class="col-sm-12 up_to_off">
+            <img src="assets/img/ropitas1170x200.jpg" alt="offers" class="img-fluid w-100" />
+            <div class="up_to_content">
+              <h2>HASTA UN 75 % DESCUENTO</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special sección -->
+  <section id="special" class="special">
+    <div class="container" id="special-section">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-5">
+            <h2 class="pb-3 position-relative d-inline-block">
+              OFERTA DE INAUGURACIÓN
+            </h2>
+          </div>
         </div>
 
-<!-- UP to 75% OFF -->
-        <div class="overflow-hidden my-5">
-          <div class="row">
-            <div class="col-sm-12 up_to_off">
-              <img
-                src="assets/img/ropitas1170x200.jpg"
-                alt="offers"
-                class="img-fluid w-100"
-              />
-              <div class="up_to_content">
-                <h2>HASTA UN 75 % DESCUENTO</h2>
+        <div class="col-sm-12 col-lg-7 text-center text-lg-start">
+          <div class="countdown-container">
+            <h2 class="text-uppercase">Camiseta Edición Especial Chica</h2>
+            <p class="my-4">
+              Llévate esta maravillosa camiseta edición exclusiva a un precio
+              muy reducido, únicamente estará disponible esta oferta por
+              tiempo limitado hasta terminar la cuenta atrás, aprovecha esta
+              oportunidad.
+            </p>
+            <ul class="list-unstyled countdown-counter">
+              <li><span class="fs-1 d-block" id="days">00</span> Days</li>
+              <li><span class="fs-1 d-block" id="hours">00</span>Hr</li>
+              <li><span class="fs-1 d-block" id="min">00</span>Min</li>
+              <li><span class="fs-1 d-block" id="sec">00</span>Sec</li>
+            </ul>
+            <span class="countdown-price h3 d-block mb-4">9.99€ <del>30.00€</del></span>
+            <button id="add_to_card5" type="button" class="btn btn-danger">AÑADIR 🛒</button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <div class="special-img position-relative">
+            <span class="sale">Rebaja</span>
+            <img src="assets/img/especial-negra-frente.png" class="img-fluid" alt="" />
+            <img src="assets/img/especial-negra-espalda.png" class="img-fluid image-dos" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios sección -->
+  <section id="testimonial" class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-5">
+            <h2 class="pb-3 position-relative d-inline-block">Testimonios</h2>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+          <div id="carouselExampleIndicatorsTwo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-wrapper">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img src="assets/img/user.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="username">
+                      <h3>Martína Lopez, Influencer / Youtuber</h3>
+                      <span>El Rincón de Martina</span>
+                      <p>
+                        Esta web me la recomendó una amiga y estoy encantada
+                        con la rapidez del envío y la calidad de las
+                        camisetas, siempre realizo los unboxings en mi canal
+                        de YouTube (www.youtube/elricondemartina.com)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-wrapper">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img src="assets/img/yo(1).jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="username">
+                      <h3>Antonio PDev, Co-Founder / CEO</h3>
+                      <span>FrikiGit company ltd.</span>
+                      <p>
+                        Después de varios meses de trabajo intenso,
+                        frustraciones y alegrías os traigo mi proyecto final.
+                        Una pagina web E-commerce y responsive, estoy muy
+                        contento de poder ofreceros este proyecto, espero que
+                        os guste, cualquier duda o sugerencia podéis dejarla
+                        en la sección de contacto al final de la pagina.
+                        Gracias un saludo !
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsTwo"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="ti-angle-left slider-icon"></span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsTwo"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="ti-angle-right slider-icon"></span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-<!-- Special sección -->
-    <section id="special" class="special">
-      <div class="container" id="special-section">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="headline text-center mb-5">
-              <h2 class="pb-3 position-relative d-inline-block">
-                OFERTA DE INAUGURACIÓN
-              </h2>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-7 text-center text-lg-start">
-            <div class="countdown-container">
-              <h2 class="text-uppercase">Camiseta Edición Especial Chica</h2>
-              <p class="my-4">
-                Llévate esta maravillosa camiseta edición exclusiva a un precio
-                muy reducido, únicamente estará disponible esta oferta por
-                tiempo limitado hasta terminar la cuenta atrás, aprovecha esta
-                oportunidad.
-              </p>
-              <ul class="list-unstyled countdown-counter">
-                <li><span class="fs-1 d-block" id="days">00</span> Days</li>
-                <li><span class="fs-1 d-block" id="hours">00</span>Hr</li>
-                <li><span class="fs-1 d-block" id="min">00</span>Min</li>
-                <li><span class="fs-1 d-block" id="sec">00</span>Sec</li>
-              </ul>
-              <span class="countdown-price h3 d-block mb-4"
-                >9.99€ <del>30.00€</del></span
-              >
-              <button id="add_to_card5" type="button" class="btn btn-danger">AÑADIR 🛒</button>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-5">
-            <div class="special-img position-relative">
-              <span class="sale">Rebaja</span>
-              <img
-                src="assets/img/especial-negra-frente.png"
-                class="img-fluid"
-                alt=""
-              />
-              <img
-                src="assets/img/especial-negra-espalda.png"
-                class="img-fluid image-dos"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<!-- Testimonios sección -->
-    <section id="testimonial" class="testimonial">
+  <!-- Contacto sección & Form -->
+  <section id="contact">
+    <div class="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="headline text-center mb-5">
-              <h2 class="pb-3 position-relative d-inline-block">Testimonios</h2>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
-            <div
-              id="carouselExampleIndicatorsTwo"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicatorsTwo"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicatorsTwo"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="testimonial-wrapper">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <img
-                          src="assets/img/user.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="username">
-                        <h3>Martína Lopez, Influencer / Youtuber</h3>
-                        <span>El Rincón de Martina</span>
-                        <p>
-                          Esta web me la recomendó una amiga y estoy encantada
-                          con la rapidez del envío y la calidad de las
-                          camisetas, siempre realizo los unboxings en mi canal
-                          de YouTube (www.youtube/elricondemartina.com)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="testimonial-wrapper">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <img
-                          src="assets/img/yo(1).jpg"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="username">
-                        <h3>Antonio PDev, Co-Founder / CEO</h3>
-                        <span>FrikiGit company ltd.</span>
-                        <p>
-                          Después de varios meses de trabajo intenso,
-                          frustraciones y alegrías os traigo mi proyecto final.
-                          Una pagina web E-commerce y responsive, estoy muy
-                          contento de poder ofreceros este proyecto, espero que
-                          os guste, cualquier duda o sugerencia podéis dejarla
-                          en la sección de contacto al final de la pagina.
-                          Gracias un saludo !
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicatorsTwo"
-                data-bs-slide="prev"
-              >
-                <span class="carousel-control-prev-icon" aria-hidden="true">
-                  <span class="ti-angle-left slider-icon"></span>
-                </span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicatorsTwo"
-                data-bs-slide="next"
-              >
-                <span class="carousel-control-next-icon" aria-hidden="true">
-                  <span class="ti-angle-right slider-icon"></span>
-                </span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
+        <div class="mb-5 text-center">
+          <h5>Mandanos tus dudas o sugerencias!</h5>
+          <h2 class="fw-bold">Contacta con nosotros</h2>
         </div>
-      </div>
-    </section>
 
-<!-- Contacto sección & Form -->
-    <section id="contact">
-      <div class="contact">
-        <div class="container">
-          <div class="mb-5 text-center">
-            <h5>Mandanos tus dudas o sugerencias!</h5>
-            <h2 class="fw-bold">Contacta con nosotros</h2>
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <h4 class="fw-bold">Información de Contacto</h4>
+            <ul class="info list-unstyled">
+              <li class="d-flex align-items-center">
+                <span class="pe-3 ti-location-pin fs-5"></span>
+                <p><a href="">Madrid (España)</a></p>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="pe-3 ti-mobile fs-5"></span>
+                <p><a href="">+91 999-999-999</a></p>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="pe-3 ti-envelope fs-5"></span>
+                <p><a href="">frikigit2023@gmail.com</a></p>
+              </li>
+            </ul>
           </div>
-
-          <div class="row">
-            <div class="col-lg-5 col-md-5">
-              <h4 class="fw-bold">Información de Contacto</h4>
-              <ul class="info list-unstyled">
-                <li class="d-flex align-items-center">
-                  <span class="pe-3 ti-location-pin fs-5"></span>
-                  <p><a href="">Madrid (España)</a></p>
-                </li>
-                <li class="d-flex align-items-center">
-                  <span class="pe-3 ti-mobile fs-5"></span>
-                  <p><a href="">+91 999-999-999</a></p>
-                </li>
-                <li class="d-flex align-items-center">
-                  <span class="pe-3 ti-envelope fs-5"></span>
-                  <p><a href="">frikigit2023@gmail.com</a></p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
-<!-- Formulario -->
-              <form action="https://formsubmit.co/frikigit2023@gmail.com" method="POST" target="_blank">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="name"
-                        id="name"
-                        placeholder="Tú nombre"
-                      />
-                    </div>
+          <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+            <!-- Formulario -->
+            <form action="https://formsubmit.co/frikigit2023@gmail.com" method="POST" target="_blank">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Tú nombre" />
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Dirección de Email"
-                      />
-                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Dirección de Email" />
                   </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea
-                        class="textarea"
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="4"
-                        placeholder="Escribe tu mensaje"
-                      ></textarea>
-                    </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="textarea" name="message" id="message" cols="30" rows="4"
+                      placeholder="Escribe tu mensaje"></textarea>
                   </div>
-                  <div class="col-md-12">
-                    <button type="submit" class="btn btn-danger" style="
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-danger" style="
                     padding-top: 8px;
                     padding-bottom: 8px;
                     padding-left: 8px;
                     padding-right: 8px;
                      ">
-                      <span><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt=""> Enviar Mensaje</span>
-                    </button>
-                    <div class="col-md-12">
-                      <button type="reset" class="btn btn-danger" style="
+                    <span><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt=""> Enviar Mensaje</span>
+                  </button>
+                  <div class="col-md-12">
+                    <button type="reset" class="btn btn-danger" style="
                       padding-top: 8px;
                       padding-bottom: 8px;
                       padding-left: 8px;
                       padding-right: 8px;
                       margin-top: 6px;
                        ">Limpiar 🧹
-                      </button>
+                    </button>
                   </div>
                 </div>
-              </form>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-<!-- Modal Contenedor Carrito  -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito 🛒</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" id="carrito-contenedor">            
-          </div>
-          <div class="modal-footer">
-            <p class="precioProducto">Precio total: <b><span id="precioTotal">0</span> €</b></p>
-            <button id="vaciar-carrito" type="button" class="btn btn-danger" >Vaciar carrito</button>
-          </div>
-        </div>
-      </div>
-    </div>   
-<!-- Footer sección -->
-    <footer>
-      <div class="p-3 copyright">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
-              <p class="my-0">
-                Copyright © 2022 <a><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt="">FrikiGit </a>Todos los Derechos
-                Reservados
-              </p>
-            </div>
-            <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
-              <p>
-                Diseñado por
-                <a                  
-                  target="_blank"
-                  style="color: black; font-weight: bold"
-                  >AntonioPDev</a
-                >.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-<!-- Scroll Back To Top -->
-    <div id="scrollUp" title="Scroll To Top">
-      <a href="#home"><span class="ti-arrow-up fs-4 text-white"></span></a>
     </div>
+  </section>
+  <!-- Modal Contenedor Carrito  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito 🛒</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="carrito-contenedor">
+        </div>
+        <div class="modal-footer">
+          <p class="precioProducto">Precio total: <b><span id="precioTotal">0</span> €</b></p>
+          <button id="vaciar-carrito" type="button" class="btn btn-danger">Vaciar carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer sección -->
+  <footer>
+    <div class="p-3 copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
+            <p class="my-0">
+              Copyright © 2022 <a><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt="">FrikiGit
+              </a>Todos los Derechos
+              Reservados
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
+            <p>
+              Diseñado por
+              <a target="_blank" style="color: black; font-weight: bold">AntonioPDev</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<!-- Bootstrap 5.2.2 JS externo  -->
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/main.js"></script>   
-  </body>
+  <!-- Scroll Back To Top -->
+  <div id="scrollUp" title="Scroll To Top">
+    <a href="#home"><span class="ti-arrow-up fs-4 text-white"></span></a>
+  </div>
+
+  <!-- Bootstrap 5.2.2 JS externo  -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
