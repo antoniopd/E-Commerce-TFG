@@ -2,71 +2,73 @@
 <html lang="es">
 
 <head>
-  <title>FrikiGit: Carrito</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrikiGit: Carrito</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Iconos CSS (import icons from themify) -->
-  <link rel="stylesheet" href="./assets/css/themify-icons.css" />
+    <!-- Iconos CSS (import icons from themify) -->
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
 
-  <!-- Bootstrap 5.2.2 CSS -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Bootstrap 5.2.2 CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-  <!-- Style CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- Responsive CSS -->
-  <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpg" href="./assets/img/PngItem_112730.png" />
-  <script defer src="assets/js/stock.js"></script>
-  <script defer src="assets/js/app.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="./assets/img/PngItem_112730.png" />
+    <script defer src="assets/js/stock.js"></script>
+    <script defer src="assets/js/app.js"></script>
 </head>
 <!-- BODY -->
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-  <!-- NavBar sección -->
-  <section id="header">
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
-      <div class="container" style="padding-left: 12px; margin-left: 10px">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/FrikiGit-logo.png" id="logo" class="img-fluid" alt="logo-empresa" />
-        </a>
-        <!-- Botón del carrito -->
-        <!-- <button class="boton-carrito " id="boton-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+    <!-- NavBar sección -->
+    <section id="header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container" style="padding-left: 12px; margin-left: 10px">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/FrikiGit-logo.png" id="logo" class="img-fluid" alt="logo-empresa" />
+                </a>
+                <!-- Botón del carrito -->
+                <!-- <button class="boton-carrito " id="boton-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
             class="ti-shopping-cart" aria-hidden="true"></i> <span id="contadorCarrito">0</span>
         </button> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="ti-align-justify"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#products">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#special">Special</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#testimonial">Testimonios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contacto</a>
-            </li>
-          </ul>
-        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-align-justify"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#products">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#special">Special</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#testimonial">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
 
-      </div>
-    </nav>
-  </section> 
-  
-  
+            </div>
+        </nav>
+    </section>
+
+    
+    
+    
     <!-- PayPal  -->
 
     <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
@@ -78,7 +80,7 @@
                 width: 100%;
             }
         }
-    
+
         /* Media query for desktop viewport */
         @media screen and (min-width: 400px) {
             #paypal-button-container {
@@ -87,102 +89,179 @@
             }
         }
     </style>
-    
+
     <div class="jumbotron text-center">
         <h1 class="display-4">¡Paso Final!</h1>
         <hr class="my-4">
-        <p class="lead"> Estas a punto de pagar con paypal la cantidad de: 
-            <h4 id="totalCarrito"></h4>
-            <div id="paypal-button-container"></div>
-        </p>        
-            <p>Los productos podrán ser descargados una vez que se procese el pago<br>
-                <strong>(Para aclaraciones :antoniopdspain@gmail.com)</strong>
-            </p>
+        <p class="lead"> Estas a punto de pagar con paypal la cantidad de:
+        <h4 id="totalCarrito"></h4>
+        <div id="paypal-button-container"></div>
+        </p>
+        <p>Los productos podrán ser descargados una vez que se procese el pago<br>
+            <strong>(Para aclaraciones :antoniopdspain@gmail.com)</strong>
+        </p>
     </div>
-      
-      <script>
 
 
-// Obtiene los datos desde localStorage
-var carritoGuardado = localStorage.getItem('carrito');
 
-// Convierte la cadena JSON a un objeto JavaScript
-var carritoRecuperado = JSON.parse(carritoGuardado);
+    <!-- TABLA DE PAGOS  -->
+    <div class="container p-5 row-cols-md-5 ">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tablaProductos">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total a Pagar:</td>
+                    <td id="totalPagar"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
-// Usa los valores recuperados del localStorage
-console.log(carritoRecuperado);
+    <!-- TABLA DE PAGOS  -->
 
-var total = 0;
-var totalCarritoEl = document.getElementById("totalCarrito");
+    <script>
 
-carritoRecuperado.forEach(function(item) {
-  var subtotal = item.precio * item.cantidad;
-  console.log("Nombre del producto: " + item.nombre);
-  console.log("Precio unitario: " + item.precio);
-  console.log("Cantidad: " + item.cantidad);
-  console.log("Subtotal: " + subtotal);
 
-  total += subtotal;
-});
+        // Obtiene los datos desde localStorage
+        var carritoGuardado = localStorage.getItem('carrito');
 
-totalCarritoEl.innerHTML = total+ "€";
+        // Convierte la cadena JSON a un objeto JavaScript
+        var carritoRecuperado = JSON.parse(carritoGuardado);
+
+        // Usa los valores recuperados del localStorage
+        console.log(carritoRecuperado);
+
+        var total = 0;
+        var totalCarritoEl = document.getElementById("totalCarrito");
+
+        carritoRecuperado.forEach(function (item) {
+            var subtotal = item.precio * item.cantidad;
+            console.log("Nombre del producto: " + item.nombre);
+            console.log("Precio unitario: " + item.precio);
+            console.log("Cantidad: " + item.cantidad);
+            console.log("Subtotal: " + subtotal);
+
+            total += subtotal;
+        });
+
+        totalCarritoEl.innerHTML = total + "€";
 
 
 
         paypal.Buttons({
-          createOrder: (data, actions) => {
-            return actions.order.create({
-              purchase_units: [{
-                amount: {
-                  value: total, currency: 'EUR' 
-                }
-              }]
-            });
-          },
-    
-          onApprove: (data, actions) => {
-            return actions.order.capture().then(function(orderData) {
-    
-              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-              const transaction = orderData.purchase_units[0].payments.captures[0];
-              alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
-    
-            });
-          }
+            createOrder: (data, actions) => {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: total, currency: 'EUR'
+                        }
+                    }]
+                });
+            },
+
+            onApprove: (data, actions) => {
+                return actions.order.capture().then(function (orderData) {
+
+                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                    const transaction = orderData.purchase_units[0].payments.captures[0];
+                    alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+
+                });
+            }
         }).render('#paypal-button-container');
-      </script>
-    
-      <!-- / PayPal  -->
-  
-  
-  
-  <!-- Footer sección -->
-  <footer>
-    <div class="p-3 copyright">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
-            <p class="my-0">
-              Copyright © 2022 <a><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt="">FrikiGit
-              </a>Todos los Derechos
-              Reservados
-            </p>
-          </div>
-          <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
-            <p>
-              Diseñado por
-              <a target="_blank" style="color: black; font-weight: bold">AntonioPDev</a>.
-            </p>
-          </div>
+
+
+        // TABLA DE PAGOS
+
+        // Obtener referencia a los elementos HTML
+        var tablaProductosEl = document.getElementById("tablaProductos");
+        var totalPagarEl = document.getElementById("totalPagar");
+
+        // Recuperar carrito del localStorage
+        var carritoGuardado = localStorage.getItem('carrito');
+        var carritoRecuperado = JSON.parse(carritoGuardado);
+
+        // Variables auxiliares para calcular el total
+        var total = 0;
+        var cantidadTotal = 0;
+
+        // Recorrer el carrito y agregar filas a la tabla
+        carritoRecuperado.forEach(function (item) {
+            var subtotal = item.precio * item.cantidad;
+            total += subtotal;
+            cantidadTotal += item.cantidad;
+
+            var row = tablaProductosEl.insertRow(); // Crear una nueva fila en la tabla
+
+            var productoCell = row.insertCell(0); // Agregar una celda para el producto
+            productoCell.innerText = item.nombre;
+
+            var cantidadCell = row.insertCell(1); // Agregar una celda para la cantidad
+            cantidadCell.innerText = item.cantidad;
+
+            var precioCell = row.insertCell(2); // Agregar una celda para el precio unitario
+            precioCell.innerText = item.precio;
+
+            var subtotalCell = row.insertCell(3); // Agregar una celda para el subtotal
+            subtotalCell.innerText = subtotal;
+        });
+
+        // Actualizar el valor de "Total a Pagar"
+        totalPagarEl.innerText = total;
+
+        // Agregar una fila extra para mostrar la cantidad total de productos
+        var cantidadTotalRow = tablaProductosEl.insertRow();
+        cantidadTotalRow.insertCell(0).colSpan = 2; // Utilizamos colspan para fusionar las celdas
+        cantidadTotalRow.insertCell(0).innerText = "Cantidad Total: "
+        cantidadTotalRow.insertCell(2).innerText = cantidadTotal;
+
+
+
+          // TABLA DE PAGOS
+
+    </script>
+
+    <!-- / PayPal  -->
+
+
+
+    <!-- Footer sección -->
+    <footer>
+        <div class="p-3 copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
+                        <p class="my-0">
+                            Copyright © 2022 <a><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png"
+                                    alt="">FrikiGit
+                            </a>Todos los Derechos
+                            Reservados
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
+                        <p>
+                            Diseñado por
+                            <a target="_blank" style="color: black; font-weight: bold">AntonioPDev</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <!-- Bootstrap 5.2.2 JS externo  -->
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/main.js"></script>
+    <!-- Bootstrap 5.2.2 JS externo  -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
