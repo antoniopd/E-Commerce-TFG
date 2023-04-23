@@ -20,19 +20,19 @@
   <link rel="stylesheet" href="./assets/css/responsive.css" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/jpg" href="./assets/img/PngItem_112730.png" />
+  <link rel="icon" type="image/jpg" href="./assets/img/PngItem_112730.webp" />
   <script defer src="assets/js/stock.js"></script>
   <script defer src="assets/js/app.js"></script>
 </head>
 <!-- BODY -->
 
-<body data-bs-spy="scroll" data-bs-target=".navbar">
+yo<body data-bs-spy="scroll" data-bs-target=".navbar">
   <!-- NavBar sección -->
   <section id="header">
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container" style="padding-left: 12px; margin-left: 10px">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/FrikiGit-logo.png" id="logo" class="img-fluid" alt="logo-empresa" />
+          <img src="assets/img/FrikiGit-logo.webp" id="logo" class="img-fluid" alt="logo-empresa" />
         </a>
         <!-- Botón del carrito -->
         <button class="boton-carrito " id="boton-carrito" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
@@ -82,7 +82,7 @@
               <h1>FrikiGit</h1>
               <h2>Conoce Nuestra Historia</h2>
               <a href="./assets/html/history.html" target="_blank" class="btn btn-danger text-uppercase mt-4">Una
-                historia Friki <img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt=""></a>
+                historia Friki <img class="icono-enviar" src="./assets/img/FrikiGit-logo.webp" alt=""></a>
             </div>
           </div>
         </div>
@@ -122,7 +122,28 @@
               <div class="offer-box text-center position-relative">
                 <div class="offer-inner">
                   <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/chico-entero500x375.jpg" alt="Offers" class="img-fluid" />
+                    <picture>
+                    <source
+                       sizes="1920w, 1280w, 640w" 
+                       srcset="assets/img/chico-entero500x375.avif 1920w, 
+                       assets/img/chico-entero500x375.avif 1280w, 
+                       assets/img/chico-entero500x375.avif 640w" 
+                       type="image/avif">
+                    <source
+                       sizes="1920w, 1280w, 640w" 
+                       srcset="assets/img/chico-entero500x375.webp 1920w, 
+                       assets/img/chico-entero500x375.webp 1280w, 
+                       assets/img/chico-entero500x375.webp 640w" 
+                       type="image/webp">
+                    <source
+                       sizes="1920w, 1280w, 640w" 
+                       srcset="assets/img/chico-entero500x375.jpg 1920w, 
+                       assets/img/chico-entero500x375.jpg 1280w, 
+                       assets/img/chico-entero500x375.jpg 640w" 
+                       type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="assets/img/chico-entero500x375.jpg" lazyalt="imagen" width="500" height="300">
+                    </picture>
+                    <!-- <img src="assets/img/chico-entero500x375.jpg" alt="Offers" class="img-fluid" /> -->
                     <div class="offer-overlay"></div>
                   </div>
                   <div class="offer-info">
@@ -146,7 +167,7 @@
               <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
                 <div class="offer-inner">
                   <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/camiseta-azul375x240.jpg" alt="Offers" class="img-fluid" />
+                    <img src="assets/img/camiseta-azul375x240.webp" alt="Offers" class="img-fluid" />
                     <div class="offer-overlay"></div>
                   </div>
                   <div class="offer-info">
@@ -167,7 +188,7 @@
               <div class="offer-box text-center position-relative">
                 <div class="offer-inner">
                   <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/tazas375x240.jpg" alt="Offers" class="img-fluid" />
+                    <img src="assets/img/tazas375x240.webp" alt="Offers" class="img-fluid" />
                     <div class="offer-overlay"></div>
                   </div>
                   <div class="offer-info">
@@ -192,7 +213,7 @@
               <div class="offer-box text-center position-relative">
                 <div class="offer-inner">
                   <div class="offer-image position-relative overflow-hidden">
-                    <img src="assets/img/chicagithub500x375.jpg" alt="Offers" class="img-fluid" />
+                    <img src="assets/img/chicagithub500x375.webp" alt="Offers" class="img-fluid" />
                     <div class="offer-overlay"></div>
                   </div>
                   <div class="offer-info">
@@ -235,12 +256,12 @@
                 <div class="product-image position-relative">
                   <span class="sale">Rebaja</span>
                   <img
-                    src="assets/img/chica1-frente970x1000.jpg"
+                    src="assets/img/chica1-frente970x100wechicagithub500x375.webp"
                     class="img-fluid product-image-first"
                     alt="products"
                   />
                   <img
-                    src="assets/img/chica1-espaldas1.jpg"
+                    src="assets/img/chica1-espaldaswechicagithub500x375.webp"
                     class="img-fluid product-image-secondary"
                     alt="products"
                   />
@@ -423,7 +444,7 @@
       <div class="overflow-hidden my-5">
         <div class="row">
           <div class="col-sm-12 up_to_off">
-            <img src="assets/img/ropitas1170x200.jpg" alt="offers" class="img-fluid w-100" />
+            <img src="assets/img/ropitas1170x200.webp" alt="offers" class="img-fluid w-100" />
             <div class="up_to_content">
               <h2>HASTA UN 75 % DESCUENTO</h2>
             </div>
@@ -467,8 +488,16 @@
         <div class="col-sm-12 col-lg-5">
           <div class="special-img position-relative">
             <span class="sale">Rebaja</span>
-            <img src="assets/img/especial-negra-frente.png" class="img-fluid" alt="" />
-            <img src="assets/img/especial-negra-espalda.png" class="img-fluid image-dos" alt="" />
+            <picture>
+              <source srcset="assets/img/especial-negra-frente.avif" type="image/avif">
+              <source srcset="assets/img/especial-negra-frente.webp" type="image/webp">
+              <img class="img-fluid" loading="lazy" src="assets/img/especial-negra-frente.png" width="500" heigth="300" alt="">
+            </picture>
+            <picture>
+              <source srcset="assets/img/especial-negra-espalda.avif" type="image/avif">
+              <source srcset="assets/img/especial-negra-espalda.webp" type="image/webp">
+              <img class="img-fluid image-dos" loading="lazy" src="assets/img/especial-negra-espalda.png" width="500" heigth="300" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -497,7 +526,7 @@
                 <div class="testimonial-wrapper">
                   <div class="row">
                     <div class="col-sm-12">
-                      <img src="assets/img/user.png" alt="" class="img-fluid" />
+                      <img src="assets/img/user.webp" alt="" class="img-fluid" />
                     </div>
                     <div class="username">
                       <h3>Martína Lopez, Influencer / Youtuber</h3>
@@ -516,7 +545,7 @@
                 <div class="testimonial-wrapper">
                   <div class="row">
                     <div class="col-sm-12">
-                      <img src="assets/img/yo(1).jpg" alt="" class="img-fluid" />
+                      <img src="assets/img/yo(1).webp" alt="" class="img-fluid" />
                     </div>
                     <div class="username">
                       <h3>Antonio PDev, Co-Founder / CEO</h3>
@@ -609,7 +638,7 @@
                     padding-left: 8px;
                     padding-right: 8px;
                      ">
-                    <span><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt=""> Enviar Mensaje</span>
+                    <span><img class="icono-enviar" src="./assets/img/FrikiGit-logo.webp" alt=""> Enviar Mensaje</span>
                   </button>
                   <div class="col-md-12">
                     <button type="reset" class="btn btn-danger" style="
@@ -653,7 +682,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
             <p class="my-0">
-              Copyright © 2022 <a><img class="icono-enviar" src="./assets/img/FrikiGit-logo.png" alt="">FrikiGit
+              Copyright © 2022 <a><img class="icono-enviar" src="./assets/img/FrikiGit-logo.webp" alt="">FrikiGit
               </a>Todos los Derechos
               Reservados
             </p>
