@@ -32,6 +32,7 @@ stockProductos.forEach((producto) => {
   div.classList.add('col-sm-6')// le agrego clase al elemento div
  // Con innerHTML pinto el html dentro de la constante que declaré de la sección de productos.
  // he quitado el href de a 
+ 
     div.innerHTML = `      
       <a class="d-block text-center mb-4">
         <div class="product-list">
@@ -57,7 +58,7 @@ stockProductos.forEach((producto) => {
               <span class="ti-star active"></span>
               <span class="ti-star active"></span>
               <span class="ti-star"></span>
-            </div>
+            </div>            
             <button type="button" class="add_to_card" id="add_to_card${producto.id}">AÑADIR🛒</button>
           </div>
         </div>

@@ -86,7 +86,6 @@ a.navbar-brand{
     font-size: 25px;
     background-color: var(--bg-white);
     border-radius: 50%;
-    padding-left: 8rem;
     transition: all .3s;
 }
 #boton-carrito:hover{
