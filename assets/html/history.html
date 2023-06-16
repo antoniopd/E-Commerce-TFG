@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
 </head>
-<body onload="closeWindow();"> <!-- Cerrar ventana automáticamente --> 
+<body onload="closeWindow();" class="historyPage"> <!-- Cerrar ventana automáticamente --> 
     <main class="star-wars">
         <h2>La historia de  FrikiGit</h2>
-        <p>
+        <p class="historyPage">
          Todo comenzó en el pequeño garaje de una casa, en la ciudad de Madrid.           
         </p>
         <p>
@@ -27,10 +27,23 @@
       <script type="text/javascript">
        
            
-function closeWindow(){ // Función para cerrar la ventana automáticamente 
-window.setTimeout('window.close()',35000) // Tiempo en milisegundos (1000 = 1 segundo) 
+       function closeWindow() {
+  // Función para cerrar la ventana automáticamente
+  window.setTimeout('window.close()', 35000); // Tiempo en milisegundos (1000 = 1 segundo)
 
+  // Función para cerrar la página history.html al hacer clic en cualquier parte de la página
+  let historyPage = document.querySelector('.historyPage');
+  historyPage.addEventListener("click", function() {
+    // Mostrar un mensaje de alerta para confirmar si desea cerrar la ventana
+    let confirmClose = confirm("¿Está seguro de que desea salir?");
+
+    if (confirmClose) {
+      window.setTimeout('window.close()'); // Cerrar la ventana después de un breve retraso
+    }
+  });
 }
+
+closeWindow();
 </script>
 </body>
 </html>
