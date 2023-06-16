@@ -492,7 +492,9 @@ a.navbar-brand{
 .icono-enviar{
     width: 2rem;
     height: 2rem;
+    margin-right: 3px;
 }
+
 
 /* Footer CSS */
 .copyright{
